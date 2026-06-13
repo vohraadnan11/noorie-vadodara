@@ -10,14 +10,14 @@
     --bg:#0a0806;
     --bg2:#15110d;
     --gold:#d4af37;
-    --gold-light:#f0d98c;
-    --brown:#8b5e34;
+    --gold-light:#ffd700;
+    --brown:#b8860b;
     --text:#e8ddc8;
     --text-muted:#b8a888;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
   body{
-    font-family:'Georgia','Times New Roman',serif;
+    font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif;
     background:var(--bg);
     color:var(--text);
     line-height:1.6;
@@ -28,8 +28,8 @@
     position:fixed;
     top:0;left:0;right:0;bottom:0;
     background:
-      radial-gradient(circle at 20% 20%, rgba(212,175,55,0.06) 0%, transparent 40%),
-      radial-gradient(circle at 80% 80%, rgba(139,94,52,0.08) 0%, transparent 40%);
+      radial-gradient(circle at 20% 20%, rgba(212,175,55,0.08) 0%, transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(184,134,11,0.08) 0%, transparent 40%);
     pointer-events:none;
     z-index:0;
   }
@@ -319,6 +319,42 @@
     .section-title{font-size:1.4rem;}
   }
 </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Noorie Enterprise",
+  "image": "https://vohraadnan11.github.io/noorie-enterprise/logo.jpg",
+  "description": "Noorie Enterprise offers pure non-alcoholic attars, perfumes and incense sticks in Vadodara, Gujarat.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "A-22, Aman Society, Ajwa Road, Navjeevan",
+    "addressLocality": "Vadodara",
+    "addressRegion": "Gujarat",
+    "postalCode": "390019",
+    "addressCountry": "IN"
+  },
+  "telephone": "+918780972908",
+  "priceRange": "₹₹",
+  "url": "https://vohraadnan11.github.io/noorie-enterprise/",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "10:00",
+    "closes": "21:00"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Vadodara"
+  },
+  "makesOffer": [
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Attar"}},
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Perfume"}},
+    {"@type":"Offer","itemOffered":{"@type":"Product","name":"Incense Sticks"}}
+  ]
+}
+</script>
 </head>
 <body>
 
