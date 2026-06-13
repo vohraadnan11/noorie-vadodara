@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Attars in Vadodara | Noorie Enterprise - Pure Perfume Oils & Incense Sticks</title>
+<meta name="description" content="Noorie Enterprise - Premium attars, perfumes & incense sticks in Vadodara. Pure non-alcoholic attar near Ajwa Road, Navjeevan. Call/WhatsApp +91 8780972908">
+<style>
+  :root{
+    --bg:#0a0806;
+    --bg2:#15110d;
+    --gold:#d4af37;
+    --gold-light:#f0d98c;
+    --brown:#8b5e34;
+    --text:#e8ddc8;
+    --text-muted:#b8a888;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:'Georgia','Times New Roman',serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  body::before{
+    content:'';
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    background:
+      radial-gradient(circle at 20% 20%, rgba(212,175,55,0.06) 0%, transparent 40%),
+      radial-gradient(circle at 80% 80%, rgba(139,94,52,0.08) 0%, transparent 40%);
+    pointer-events:none;
+    z-index:0;
+  }
+  a{color:var(--gold);text-decoration:none;}
+  img{max-width:100%;display:block;}
+
+  /* Header */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(10,8,6,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(212,175,55,0.25);
+    padding:14px 20px;
+    display:flex;justify-content:space-between;align-items:center;
+  }
+  .logo{
+    font-size:1.4rem;
+    font-weight:bold;
+    letter-spacing:2px;
+    color:var(--gold-light);
+    text-transform:uppercase;
+  }
+  .logo span{color:var(--brown);}
+  .call-btn{
+    background:linear-gradient(135deg,var(--gold) 0%, var(--brown) 100%);
+    color:#0a0806;
+    padding:10px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    font-size:0.85rem;
+    letter-spacing:1px;
+    box-shadow:0 4px 15px rgba(212,175,55,0.3);
+  }
+
+  /* Hero */
+  .hero{
+    position:relative;
+    text-align:center;
+    padding:60px 20px 50px;
+    z-index:1;
+  }
+  .hero-tag{
+    display:inline-block;
+    border:1px solid var(--gold);
+    color:var(--gold-light);
+    padding:6px 18px;
+    border-radius:30px;
+    font-size:0.75rem;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    margin-bottom:20px;
+  }
+  .hero h1{
+    font-size:2.4rem;
+    color:var(--gold-light);
+    margin-bottom:14px;
+    line-height:1.3;
+    font-weight:400;
+    text-shadow:0 0 30px rgba(212,175,55,0.2);
+  }
+  .hero h1 strong{
+    display:block;
+    font-size:1.1em;
+    color:var(--gold);
+    margin-top:6px;
+  }
+  .hero p{
+    color:var(--text-muted);
+    font-size:1.05rem;
+    max-width:600px;
+    margin:0 auto 30px;
+  }
+  .hero-buttons{
+    display:flex;gap:14px;justify-content:center;flex-wrap:wrap;
+  }
+  .btn{
+    padding:14px 30px;
+    border-radius:30px;
+    font-weight:bold;
+    font-size:0.95rem;
+    letter-spacing:1px;
+    transition:transform 0.2s, box-shadow 0.2s;
+    display:inline-flex;align-items:center;gap:8px;
+  }
+  .btn-primary{
+    background:linear-gradient(135deg,#25D366 0%, #1aa651 100%);
+    color:#fff;
+    box-shadow:0 6px 20px rgba(37,211,102,0.35);
+  }
+  .btn-secondary{
+    background:transparent;
+    border:1px solid var(--gold);
+    color:var(--gold-light);
+  }
+  .btn:hover{transform:translateY(-3px);}
+
+  /* Divider */
+  .divider{
+    width:100%;height:1px;
+    background:linear-gradient(90deg, transparent, var(--gold) 50%, transparent);
+    opacity:0.4;
+    margin:10px 0;
+  }
+
+  /* Section */
+  section{
+    position:relative;
+    z-index:1;
+    padding:50px 20px;
+    max-width:1100px;
+    margin:0 auto;
+  }
+  .section-title{
+    text-align:center;
+    color:var(--gold-light);
+    font-size:1.8rem;
+    margin-bottom:8px;
+    font-weight:400;
+  }
+  .section-sub{
+    text-align:center;
+    color:var(--text-muted);
+    font-size:0.95rem;
+    margin-bottom:36px;
+  }
+  .section-title::after{
+    content:'';
+    display:block;
+    width:60px;height:2px;
+    background:var(--gold);
+    margin:14px auto 0;
+  }
+
+  /* Products grid */
+  .products-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:22px;
+  }
+  .product-card{
+    background:linear-gradient(145deg, var(--bg2) 0%, #1d1611 100%);
+    border:1px solid rgba(212,175,55,0.18);
+    border-radius:14px;
+    padding:24px;
+    text-align:center;
+    transition:transform 0.25s, border-color 0.25s;
+  }
+  .product-card:hover{
+    transform:translateY(-6px);
+    border-color:var(--gold);
+  }
+  .product-icon{
+    width:70px;height:70px;
+    margin:0 auto 16px;
+    border-radius:50%;
+    background:radial-gradient(circle, rgba(212,175,55,0.18) 0%, rgba(212,175,55,0.04) 70%);
+    border:1px solid rgba(212,175,55,0.35);
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.8rem;
+    color:var(--gold-light);
+  }
+  .product-card h3{
+    color:var(--gold-light);
+    font-size:1.1rem;
+    margin-bottom:8px;
+    font-weight:600;
+  }
+  .product-card p{
+    color:var(--text-muted);
+    font-size:0.88rem;
+  }
+
+  /* Image placeholder gallery */
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:16px;
+  }
+  .gallery-item{
+    aspect-ratio:1/1;
+    background:linear-gradient(145deg, #1d1611 0%, var(--bg2) 100%);
+    border:1px dashed rgba(212,175,55,0.3);
+    border-radius:12px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    color:var(--text-muted);
+    font-size:0.8rem;
+    text-align:center;
+    padding:10px;
+    gap:8px;
+  }
+  .gallery-item .icon{font-size:1.8rem;color:var(--gold);}
+
+  /* Why choose us */
+  .features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+  }
+  .feature{
+    padding:22px;
+    border-left:3px solid var(--gold);
+    background:rgba(212,175,55,0.04);
+    border-radius:0 10px 10px 0;
+  }
+  .feature h4{color:var(--gold-light);margin-bottom:6px;font-size:1.05rem;}
+  .feature p{color:var(--text-muted);font-size:0.9rem;}
+
+  /* Location / Map */
+  .location-box{
+    background:var(--bg2);
+    border:1px solid rgba(212,175,55,0.2);
+    border-radius:16px;
+    padding:30px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+    align-items:center;
+  }
+  @media (max-width:700px){
+    .location-box{grid-template-columns:1fr;}
+  }
+  .location-info h3{color:var(--gold-light);margin-bottom:14px;font-size:1.3rem;}
+  .location-info p{color:var(--text-muted);margin-bottom:10px;font-size:0.95rem;}
+  .location-info .label{color:var(--gold);font-weight:bold;}
+  .map-embed iframe{
+    width:100%;height:280px;border:0;border-radius:12px;
+    filter:grayscale(40%) contrast(1.1);
+  }
+
+  /* CTA banner */
+  .cta-banner{
+    text-align:center;
+    background:linear-gradient(135deg, rgba(212,175,55,0.12), rgba(139,94,52,0.12));
+    border:1px solid rgba(212,175,55,0.3);
+    border-radius:18px;
+    padding:40px 20px;
+    margin:50px auto;
+    max-width:1100px;
+  }
+  .cta-banner h2{color:var(--gold-light);font-size:1.6rem;margin-bottom:10px;font-weight:400;}
+  .cta-banner p{color:var(--text-muted);margin-bottom:24px;}
+
+  /* FAQ for SEO */
+  .faq-item{
+    border-bottom:1px solid rgba(212,175,55,0.15);
+    padding:18px 0;
+  }
+  .faq-item h4{color:var(--gold-light);margin-bottom:8px;font-size:1.02rem;}
+  .faq-item p{color:var(--text-muted);font-size:0.92rem;}
+
+  /* Footer */
+  footer{
+    text-align:center;
+    padding:30px 20px;
+    border-top:1px solid rgba(212,175,55,0.2);
+    color:var(--text-muted);
+    font-size:0.85rem;
+    position:relative;z-index:1;
+  }
+  footer .gold{color:var(--gold);}
+
+  /* Floating WhatsApp button */
+  .float-wa{
+    position:fixed;
+    bottom:22px;right:22px;
+    width:58px;height:58px;
+    background:linear-gradient(135deg,#25D366,#1aa651);
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 6px 20px rgba(37,211,102,0.5);
+    z-index:200;
+    font-size:1.6rem;
+    color:#fff;
+    animation:pulse 2.5s infinite;
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 6px 20px rgba(37,211,102,0.5);}
+    50%{box-shadow:0 6px 28px rgba(37,211,102,0.85);}
+    100%{box-shadow:0 6px 20px rgba(37,211,102,0.5);}
+  }
+
+  @media (max-width:600px){
+    .hero h1{font-size:1.7rem;}
+    .section-title{font-size:1.4rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Noorie<span> Enterprise</span></div>
+  <a href="tel:+918780972908" class="call-btn">Call Now</a>
+</header>
+
+<div class="hero">
+  <div class="hero-tag">Vadodara's Trusted Attar House</div>
+  <h1>Best Attars in Vadodara
+    <strong>Pure, Alcohol-Free Perfume Oils &amp; Incense Sticks</strong>
+  </h1>
+  <p>
+    Searching for "attar near me" or "attar shop in Vadodara"? Noorie Enterprise on Ajwa Road
+    brings you authentic, long-lasting attars, premium perfumes and fragrant incense sticks —
+    crafted in the timeless tradition of fine fragrance.
+  </p>
+  <div class="hero-buttons">
+    <a href="https://wa.me/918780972908?text=Hi%2C%20I%20found%20your%20attar%20shop%20on%20Google%2C%20I%20want%20to%20know%20more"
+       target="_blank" class="btn btn-primary">
+       💬 WhatsApp Us Now
+    </a>
+    <a href="tel:+918780972908" class="btn btn-secondary">📞 Call: +91 87809 72908</a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- PRODUCTS -->
+<section>
+  <h2 class="section-title">Our Fragrance Collection</h2>
+  <p class="section-sub">Premium attars, perfumes &amp; incense — sourced and blended for purity</p>
+  <div class="products-grid">
+    <div class="product-card">
+      <div class="product-icon">🌹</div>
+      <h3>Floral Attars</h3>
+      <p>Rose, Jasmine, Mogra &amp; traditional floral blends — alcohol-free and long-lasting.</p>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">🌳</div>
+      <h3>Oud &amp; Musk Attars</h3>
+      <p>Rich, woody and musky attars for a bold, premium fragrance experience.</p>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">🧴</div>
+      <h3>Perfumes</h3>
+      <p>Long-lasting unisex and signature perfumes for everyday &amp; special occasions.</p>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">🔥</div>
+      <h3>Incense Sticks (Agarbatti)</h3>
+      <p>Premium dhoop &amp; incense sticks for pooja, home fragrance and relaxation.</p>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">🎁</div>
+      <h3>Gift Packs</h3>
+      <p>Beautifully packed attar &amp; perfume sets — perfect for gifting on any occasion.</p>
+    </div>
+    <div class="product-card">
+      <div class="product-icon">🕌</div>
+      <h3>Non-Alcoholic Attars</h3>
+      <p>Suitable for daily use and prayer — pure, traditional, halal-friendly fragrances.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY PLACEHOLDER -->
+<section>
+  <h2 class="section-title">Product Gallery</h2>
+  <p class="section-sub">Photos coming soon — replace these placeholders with your product images</p>
+  <div class="gallery">
+    <div class="gallery-item"><span class="icon">🖼️</span>Attar Bottle Image 1<br><small>(insert image link)</small></div>
+    <div class="gallery-item"><span class="icon">🖼️</span>Attar Bottle Image 2<br><small>(insert image link)</small></div>
+    <div class="gallery-item"><span class="icon">🖼️</span>Perfume Image<br><small>(insert image link)</small></div>
+    <div class="gallery-item"><span class="icon">🖼️</span>Incense Sticks Image<br><small>(insert image link)</small></div>
+    <div class="gallery-item"><span class="icon">🖼️</span>Shop Front Image<br><small>(insert image link)</small></div>
+    <div class="gallery-item"><span class="icon">🖼️</span>Gift Pack Image<br><small>(insert image link)</small></div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section>
+  <h2 class="section-title">Why Choose Noorie Enterprise</h2>
+  <p class="section-sub">Your local attar &amp; perfume specialist in Vadodara</p>
+  <div class="features">
+    <div class="feature">
+      <h4>📍 Conveniently Located</h4>
+      <p>Easy to find near Ajwa Road, Navjeevan — serving customers across Vadodara.</p>
+    </div>
+    <div class="feature">
+      <h4>✅ 100% Authentic</h4>
+      <p>Pure, non-alcoholic attars and quality-checked perfumes &amp; incense sticks.</p>
+    </div>
+    <div class="feature">
+      <h4>💬 Quick WhatsApp Support</h4>
+      <p>Message us anytime for product details, pricing or orders — quick replies guaranteed.</p>
+    </div>
+    <div class="feature">
+      <h4>🎯 Wide Range</h4>
+      <p>From traditional attars to modern perfumes and daily-use incense sticks, all under one roof.</p>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section>
+  <h2 class="section-title">Visit Our Store</h2>
+  <p class="section-sub">Find us on the map &amp; get directions instantly</p>
+  <div class="location-box">
+    <div class="location-info">
+      <h3>Noorie Enterprise</h3>
+      <p><span class="label">Address:</span> A-22, Aman Society, Ajwa Road, Navjeevan, Vadodara, Gujarat - 390019</p>
+      <p><span class="label">Phone / WhatsApp:</span> <a href="tel:+918780972908">+91 87809 72908</a></p>
+      <p><span class="label">Serving:</span> Ajwa Road, Navjeevan, Vadodara &amp; nearby areas</p>
+      <div class="hero-buttons" style="justify-content:flex-start;margin-top:20px;">
+        <a href="https://wa.me/918780972908" target="_blank" class="btn btn-primary">💬 Chat on WhatsApp</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Noorie+Enterprise+A-22+Aman+Society+Ajwa+Road+Navjeevan+Vadodara+390019" target="_blank" class="btn btn-secondary">📍 Get Directions</a>
+      </div>
+    </div>
+    <div class="map-embed">
+      <iframe
+        loading="lazy"
+        src="https://www.google.com/maps?q=A-22,+Aman+Society,+Ajwa+Road,+Navjeevan,+Vadodara,+Gujarat+390019&output=embed">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ for SEO -->
+<section>
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  <p class="section-sub">Common questions about attars in Vadodara</p>
+  <div class="faq-item">
+    <h4>Where can I buy pure attar in Vadodara?</h4>
+    <p>Noorie Enterprise, located on Ajwa Road near Navjeevan, Vadodara, offers a wide range of pure, non-alcoholic attars, perfumes and incense sticks at affordable prices.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Do you have non-alcoholic attars suitable for prayer?</h4>
+    <p>Yes, we stock a wide range of traditional non-alcoholic attars suitable for daily use and religious occasions.</p>
+  </div>
+  <div class="faq-item">
+    <h4>How can I order or enquire about products?</h4>
+    <p>Simply message us on WhatsApp at +91 87809 72908 or call us directly — we're happy to help with product details, pricing and availability.</p>
+  </div>
+  <div class="faq-item">
+    <h4>Do you sell incense sticks (agarbatti) as well?</h4>
+    <p>Yes, along with attars and perfumes, we offer a range of quality incense sticks for pooja and home fragrance.</p>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-banner">
+  <h2>Looking for the Best Attar Shop Near You in Vadodara?</h2>
+  <p>Message us now on WhatsApp for the latest collection, prices &amp; offers.</p>
+  <a href="https://wa.me/918780972908?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20attars" target="_blank" class="btn btn-primary">💬 WhatsApp Noorie Enterprise</a>
+</div>
+
+<footer>
+  <p>© <span id="year"></span> <span class="gold">Noorie Enterprise</span> — Attars, Perfumes &amp; Incense Sticks, Vadodara</p>
+  <p>A-22, Aman Society, Ajwa Road, Navjeevan, Vadodara, Gujarat - 390019 | +91 87809 72908</p>
+</footer>
+
+<a href="https://wa.me/918780972908" target="_blank" class="float-wa" title="Chat on WhatsApp">💬</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
